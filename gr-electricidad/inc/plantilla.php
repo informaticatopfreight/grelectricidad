@@ -165,8 +165,16 @@ function gr_otros_servicios( $excluir = 0 ) {
 			<div class="more-grid">
 				<?php foreach ( array_values( $lista ) as $i => $p ) : ?>
 					<a class="more-card js-up" href="<?php echo esc_url( get_permalink( $p ) ); ?>">
-						<span class="mono"><?php echo esc_html( str_pad( (string) ( $i + 1 ), 2, '0', STR_PAD_LEFT ) ); ?></span>
-						<strong><?php echo esc_html( get_the_title( $p ) ); ?></strong>
+						<?php
+						if ( has_post_thumbnail( $p ) ) {
+							echo get_the_post_thumbnail( $p, 'gr-tarjeta', array( 'class' => 'more-img', 'data-decorativa' => '1', 'loading' => 'lazy' ) );
+						}
+						?>
+						<span class="more-shade" aria-hidden="true"></span>
+						<span class="more-body">
+							<span class="more-top"><span class="mono more-n"><?php echo esc_html( str_pad( (string) ( $i + 1 ), 2, '0', STR_PAD_LEFT ) ); ?></span><span class="more-arr"><?php echo gr_flecha(); // phpcs:ignore WordPress.Security.EscapeOutput ?></span></span>
+							<strong><?php echo esc_html( get_the_title( $p ) ); ?></strong>
+						</span>
 					</a>
 				<?php endforeach; ?>
 			</div>

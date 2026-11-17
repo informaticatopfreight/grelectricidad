@@ -252,12 +252,20 @@ p{margin:0 0 1em}
 .cols h3{margin-top:0}
 .more{padding:0 0 120px}
 .more h2{font-size:clamp(32px,4vw,56px);margin-bottom:32px}
-.more-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.more-card{display:flex;flex-direction:column;justify-content:space-between;gap:40px;min-height:200px;padding:28px;background:var(--ink-2);text-decoration:none;transition:background .3s,color .3s}
-.more-card:hover{background:var(--red);color:#fff}
-.more-card .mono{color:var(--muted)}
-.more-card:hover .mono{color:#fff}
-.more-card strong{font-size:24px;font-stretch:110%}
+.more-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
+.more-card{position:relative;display:block;overflow:hidden;min-height:280px;background:var(--ink-2);color:#fff;text-decoration:none;border:1px solid rgba(244,242,238,.22);transition:border-color .3s}
+.more-card:hover{border-color:var(--red);color:#fff}
+.more-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;transition:transform .8s var(--ease),opacity .4s}
+.more-shade{position:absolute;inset:0;background:rgba(15,15,16,.45);transition:background .4s}
+.more-card:hover .more-img{transform:scale(1.08);opacity:.7}
+.more-card:hover .more-shade{background:rgba(227,38,46,.55)}
+.more-body{position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:40px;min-height:280px;padding:28px}
+.more-top{display:flex;justify-content:space-between;align-items:center}
+.more-n{background:var(--red);color:#fff;padding:6px 10px}
+.more-arr{width:48px;height:48px;border:1px solid #fff;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:transform .4s,background .4s,border-color .4s}
+.more-arr svg{width:20px;height:20px}
+.more-card:hover .more-arr{transform:rotate(-45deg);background:var(--red);border-color:var(--red)}
+.more-card strong{font-size:28px;font-stretch:110%;line-height:1.1;text-shadow:0 2px 16px rgba(0,0,0,.6)}
 
 /* Obras */
 .works{padding:64px 0 120px}
