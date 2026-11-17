@@ -180,7 +180,7 @@ function gr_otros_servicios( $excluir = 0 ) {
  */
 function gr_menu_reserva() {
 	echo '<ul>';
-	foreach ( array( 'servicios' => 'Servicios', 'empresa' => 'Empresa', 'obras' => 'Obras', 'acreditaciones' => 'Acreditaciones', 'contacto' => 'Contacto' ) as $ruta => $txt ) {
+	foreach ( array( 'empresa' => 'Empresa', 'servicios' => 'Servicios', 'obras' => 'Obras', 'acreditaciones' => 'Acreditaciones', 'contacto' => 'Contacto' ) as $ruta => $txt ) {
 		printf( '<li><a href="%s">%s</a></li>', esc_url( gr_url( $ruta ) ), esc_html( $txt ) );
 	}
 	echo '</ul>';

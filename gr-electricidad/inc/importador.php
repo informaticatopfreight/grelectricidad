@@ -256,7 +256,7 @@ function gr_importar() {
 		$m = wp_create_nav_menu( 'Principal' );
 		if ( ! is_wp_error( $m ) ) {
 			$serv_item = 0;
-			foreach ( array( 'servicios', 'empresa', 'obras', 'acreditaciones', 'contacto' ) as $i => $slug ) {
+			foreach ( array( 'empresa', 'servicios', 'obras', 'acreditaciones', 'contacto' ) as $i => $slug ) {
 				if ( empty( $ids[ $slug ] ) ) {
 					continue;
 				}
