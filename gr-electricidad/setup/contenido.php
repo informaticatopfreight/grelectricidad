@@ -129,7 +129,7 @@ return array(
 			'titulo'      => 'CCTV y videovigilancia',
 			'resumen'     => 'Cámaras IP y analógicas, día/noche, domo y antivandálicas. Grabadores DVR, HVR y NVR. Vigilancia perimetral e interior.',
 			'descripcion' => 'Instalación de cámaras de videovigilancia y CCTV para naves, empresas y comercios en Toledo: cámaras IP, grabadores NVR y vigilancia perimetral.',
-			'foto'        => 'tendido-cableado-cuadro-electrico.jpg',
+			'foto'        => 'camaras-videovigilancia.jpg',
 			'contenido'   =>
 				$h2( 'Soluciones profesionales de videovigilancia' )
 				. $p( 'Instalamos todo tipo de cámaras y grabadores de videovigilancia, con cámaras día/noche y equipos profesionales con la mejor relación calidad-precio. Tenemos amplia experiencia en centros logísticos, empresas, almacenes, comercios y oficinas donde es necesario ver todos los detalles.' )
@@ -176,7 +176,7 @@ return array(
 			'orden'       => 2,
 			'resumen'     => 'Desde 2007 trabajamos en el sector eléctrico, con todas las autorizaciones para trabajos en baja, media y alta tensión y en telecomunicaciones.',
 			'descripcion' => 'GR Electricidad, S.L., empresa instaladora autorizada desde 2007 en Pantoja (Toledo). Trabajos de alta, media y baja tensión en toda España.',
-			'foto'        => 'trabajo-en-altura-linea-aerea.jpg',
+			'foto'        => 'flota-furgonetas-gr-electricidad.jpg',
 			'contenido'   =>
 				$p( 'Fundada en 2007, GR Electricidad, S.L. ha especializado sus servicios en el sector industrial: empresas, comercios, organismos e instituciones que necesitan servicios eléctricos a medida. Tenemos nuestra sede, almacén y talleres en Pantoja (Toledo).' )
 				. $h2( 'Estamos autorizados' )
@@ -331,6 +331,8 @@ return array(
 	 * FOTOS DE OBRA (setup/fotos). Orden = orden en la galería.
 	 * ==================================================================== */
 	'fotos'   => array(
+		array( 'archivo' => 'flota-furgonetas-gr-electricidad.jpg', 'titulo' => 'Flota de furgonetas', 'alt' => 'Flota de furgonetas de GR Electricidad', 'leyenda' => 'Nuestra flota' ),
+		array( 'archivo' => 'camaras-videovigilancia.jpg', 'titulo' => 'Cámaras de videovigilancia', 'alt' => 'Cámaras de videovigilancia domo, bala y motorizadas', 'leyenda' => 'Cámaras de videovigilancia', 'galeria' => false ),
 		array( 'archivo' => 'trabajo-en-altura-linea-aerea.jpg', 'titulo' => 'Trabajo en altura en línea aérea', 'alt' => 'Electricista de GR Electricidad trabajando en altura en un apoyo de línea aérea de media tensión', 'leyenda' => 'Trabajo en línea aérea de media tensión' ),
 		array( 'archivo' => 'cuadro-general-baja-tension-embarrado.jpg', 'titulo' => 'Cuadro general de baja tensión', 'alt' => 'Cuadro general de baja tensión con embarrado de cobre', 'leyenda' => 'Cuadro general de baja tensión' ),
 		array( 'archivo' => 'montaje-paneles-solares-cubierta.jpg', 'titulo' => 'Montaje de paneles solares en cubierta', 'alt' => 'Técnico montando paneles solares fotovoltaicos en la cubierta de una nave', 'leyenda' => 'Autoconsumo fotovoltaico en cubierta' ),

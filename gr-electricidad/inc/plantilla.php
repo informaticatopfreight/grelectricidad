@@ -196,3 +196,30 @@ function gr_menu_legal_reserva() {
 	}
 	echo '</ul>';
 }
+
+/**
+ * Cinta de logotipos de clientes.
+ */
+function gr_bloque_clientes() {
+	$clientes = gr_clientes();
+	if ( ! $clientes ) {
+		return;
+	}
+	?>
+	<section class="clients" aria-labelledby="titulo-clientes">
+		<div class="wrap section-head">
+			<h2 class="disp js-up" id="titulo-clientes">Han confiado <span class="outline">en nosotros</span></h2>
+			<p class="js-up">Industria, hostelería y construcción: empresas para las que hemos trabajado.</p>
+		</div>
+		<div class="track clients-track">
+			<?php foreach ( array( false, true ) as $copia ) : ?>
+				<?php foreach ( $clientes as $archivo => $nombre ) : ?>
+					<div class="client"<?php echo $copia ? ' aria-hidden="true"' : ''; ?>>
+						<img src="<?php echo esc_url( GR_URI . '/assets/img/clientes/' . $archivo ); ?>" alt="<?php echo $copia ? '' : esc_attr( $nombre ); ?>" loading="lazy">
+					</div>
+				<?php endforeach; ?>
+			<?php endforeach; ?>
+		</div>
+	</section>
+	<?php
+}

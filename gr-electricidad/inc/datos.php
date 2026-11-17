@@ -154,3 +154,26 @@ function gr_fotos_obras( $limite = -1 ) {
 		)
 	);
 }
+
+/**
+ * Clientes (logotipos en assets/img/clientes). Se muestran en la portada y en Empresa.
+ * Para quitar uno, bórralo de esta lista.
+ *
+ * @return array<string,string> archivo => nombre
+ */
+function gr_clientes() {
+	return apply_filters(
+		'gr_clientes',
+		array(
+			'melia.png'         => 'Meliá Hotels & Resorts',
+			'gestamp.png'       => 'Gestamp',
+			'lafarge.png'       => 'Lafarge',
+			'intersurgical.png' => 'Intersurgical',
+			'ingesan.png'       => 'Ingesan (Grupo OHL)',
+			'bongioanni.png'    => 'Bongioanni',
+			'mecanotubo.png'    => 'Mecanotubo',
+			'mesat.png'         => 'Mesat',
+			'mwb.png'           => 'MWB Elektrotechnik Gruppe',
+		)
+	);
+}

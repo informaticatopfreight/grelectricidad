@@ -41,6 +41,7 @@ while ( have_posts() ) :
 		gr_bloque_contacto( false );
 	} elseif ( 'empresa' === get_post_field( 'post_name', $id ) ) {
 		gr_otros_servicios( 0 );
+		gr_bloque_clientes();
 	}
 endwhile;
 

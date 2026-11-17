@@ -8,7 +8,7 @@ Tema de WordPress a medida para **grelectricidad.es**: diseño oscuro con el roj
 |---|---|
 | `dist/gr-electricidad.zip` | **El tema listo para subir a WordPress.** Es lo único que necesitas. |
 | `gr-electricidad/` | El código del tema (el mismo contenido que el zip). |
-| `gr-electricidad/setup/` | Textos de todas las páginas y las 25 fotos de obra, que se cargan con un botón. |
+| `gr-electricidad/setup/` | Textos de todas las páginas y las 27 fotos (obras, flota y cámaras), que se cargan con un botón. |
 | `build.sh` | Vuelve a generar el zip si cambias algo del código. |
 
 ---
@@ -38,7 +38,7 @@ Tema de WordPress a medida para **grelectricidad.es**: diseño oscuro con el roj
 1. Ve a **Apariencia → Configurar web GR** y pulsa **Configurar la web**.
 2. En unos segundos:
    - crea las 15 páginas (inicio, 6 servicios, empresa, obras, acreditaciones, contacto, aviso legal, privacidad y cookies);
-   - sube las 25 fotos con su texto alternativo y su leyenda;
+   - sube las 27 fotos con su texto alternativo y su leyenda;
    - pone la portada, el menú principal y el menú legal del pie;
    - **borra** la entrada «¡Hola, mundo!», la página de ejemplo y el comentario de prueba;
    - cierra los comentarios y desactiva el registro de usuarios;
@@ -108,6 +108,7 @@ Envía una solicitud de presupuesto desde la web y comprueba que llega. Si no ll
 - **Textos de cada página:** Páginas → editar. Los servicios son las páginas «hijas» de *Servicios*; el **extracto** de cada una es el texto corto que sale en la portada.
 - **Fotos de obra:** edita la página *Obras* y sube las imágenes desde ella (quedan adjuntas). Rellena siempre «Texto alternativo» y «Leyenda».
 - **Imagen grande de cada página:** «Imagen destacada» en el editor.
+- **Logotipos de clientes:** en `gr-electricidad/assets/img/clientes/` y la lista en `gr_clientes()` de `inc/datos.php`. Confirmad con cada cliente que podéis mostrar su logo.
 - **Lista de acreditaciones:** en `gr-electricidad/inc/datos.php`, función `gr_acreditaciones()`.
 - **Animaciones:** `gr-electricidad/assets/js/main.js`. Quien tenga activado «reducir movimiento» en su dispositivo ve la web sin animaciones.
 

@@ -212,7 +212,7 @@ function gr_importar() {
 				'name'     => $f['archivo'],
 				'tmp_name' => $tmp,
 			),
-			$obras_id,
+			( isset( $f['galeria'] ) && false === $f['galeria'] ) ? 0 : $obras_id,
 			$f['titulo'],
 			array(
 				'post_excerpt' => $f['leyenda'],

@@ -188,5 +188,6 @@ $linea     = 'M0 100 H360 L400 40 H760 L800 120 H1080 L1120 70 H1440';
 </section>
 
 <?php
+gr_bloque_clientes();
 gr_bloque_contacto( true );
 get_footer();
